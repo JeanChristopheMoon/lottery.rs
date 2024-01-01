@@ -56,3 +56,19 @@ pub fn initialise_lottery(ctx: Context<Create>, ticket_price: u64, oracle_pubkey
 
         Ok(())  
     }
+
+    ///Contexts
+
+#[derive(Account)]    
+pub struct Submit<'info>{
+
+    #[account(init, seed, constraint, payer, bump, space)]
+
+
+}
+
+#[derive(account)]
+pub struct winner {
+
+    #[account(init, seed, constraint, seed, bump, space)]
+}
