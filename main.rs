@@ -72,3 +72,19 @@ pub struct winner {
 
     #[account(init, seed, constraint, seed, bump, space)]
 }
+
+//////////////////////Accounts 
+#[Account]
+//State account
+pub  struct lottery {
+
+
+}
+
+#[Account]
+#[derive(Default)] 
+//State Account
+pub struct ticket {
+
+
+}
